@@ -28,6 +28,7 @@ Github, GitLab, Bitbucket
 - rails db:create db:migrate *//create project database and migration of your models*
 - rails db *//access database*
 - rails active_storage:install *//after run `rails db:migrate` to use Active Storage in rails 5.2*
+- rake db:drop db:create db:seed *//can use all of them in this sequence*
 
 ## Especials commands
 - bundle show **gem_name** *//check GEM version ex.: bundle show bootstrap*
@@ -44,3 +45,10 @@ Github, GitLab, Bitbucket
 - git status *//check wich file still out of the commit*
 - git checkout <branch> *//swap to another branch*
 - git checkout -b [name_of_your_new_branch] *//create a new branch and will swap automatically*
+  
+  ## Commons errors to me
+  - Error loading the 'sqlite3' Active Record adapter... (my current ruby version was 2.5.3)
+    - rvm use 2.5.1
+    - ruby '2.5.1'
+    - bundle install
+  - 
