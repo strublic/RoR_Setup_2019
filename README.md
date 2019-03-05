@@ -48,7 +48,4 @@ Github, GitLab, Bitbucket
   
   ## Commons errors to me
   - Error loading the 'sqlite3' Active Record adapter... (my current ruby version was 2.5.3)
-    - rvm use 2.5.1
-    - ruby '2.5.1'
-    - bundle install
-  - 
+  - Objects folder in .git is extremely large for my small project
