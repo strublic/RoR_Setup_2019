@@ -89,8 +89,8 @@ RSpec
   - nvm install 4.4.7
   
   ### First Rails project
-  - mkdir rails
-  - cd rails
+  - mkdir projects
+  - cd projects
   - rails new app
   - cd app
     
