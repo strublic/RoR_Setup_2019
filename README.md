@@ -21,8 +21,10 @@ RSpec
 
 ## Setup a Linux environment (Ubuntu/Mint)
   ## Install git
-  - sudo apt-get update *//update all packages*
-  - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev *//install Git and others dependencies*
+  *//update all packages*
+  - sudo apt-get update 
+  *//install Git and others dependencies*
+  - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev 
   
   ## Install rbenv
   - git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -35,23 +37,29 @@ RSpec
   - rbenv version
   
   ## Install Ruby
-  - rbenv install 2.6.1 *//intalling*
-  - ruby -v *//check version*
-  - rbenv global 2.6.1 *//set as global*
+  *//intalling ruby in rbenv*
+  - rbenv install 2.6.1 
+  *//check version*
+  - ruby -v 
+  *//set as global*
+  - rbenv global 2.6.1 
   
   ## Install bundler gem (dependency manager)
   - gem install bundler
   - rbenv rehash
   
   ## Config git
-  - git config --global color.ui true *//git command colorful*
+  *//git command colorful*
+  - git config --global color.ui true 
   - git config --global user.name "your name here"
   - git config --global user.email "email@example.com"
   
   ## Generate SSH key and copyng repo
   - ssh-keygen -t rsa -b 4096 -C "email@example.com"
-  - cat ~/.ssh/id_rsa.pub *//show ssh key then select with your mouse and copy it*
-  - ssh -T git@github.com *//connecting with github*
+  *//show ssh key then select with your mouse and copy it*
+  - cat ~/.ssh/id_rsa.pub 
+  *//connecting with github*
+  - ssh -T git@github.com 
   - Go to github site in your browser then go to SSH page and add your ssh key that you already copied
   
   ## Install Rails
@@ -82,9 +90,10 @@ RSpec
   ## Running Rails project
   - bundle exec rails db:migrate
   - rails s
-  - localhost:3000 *//in browser*
+  *//in your browser*
+  - localhost:3000 
 
-
+# Extras
 ## Common commands
 - rails new project_name *//create a new project in rails*
 - rails new project_name -d mysql *//create a new project in rails with mysql*
