@@ -1,10 +1,10 @@
 # RoR_Setup_2019
 
-## My Current Enviroment
+## My Current Environment
 ###### Ruby on Rails
-Ruby v2.5, Rails v5.2.2
+Ruby v2.6.1, Rails v5.2.2
 ###### Ruby GEMs to install
-Devise
+Devise, bootstrap, jquery-rails, jquery-ui-rails, pry-byebug, cocoon, client_side_validations, rails-i18n, cancancan
 ###### Database
 Mysql, MongoDB
 ###### Other Techs
@@ -13,6 +13,77 @@ Bootstrap, HTML, APIs, Jquery, js,
 Sublime, ATOM, VSCode
 ###### Githost:
 Github, GitLab, Bitbucket
+###### Test:
+RSpec
+
+
+# First of All
+
+## Setup a Linux environment (Ubuntu/Mint)
+  ## Install git
+  - sudo apt-get update *//update all packages*
+  - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev *//install Git and others dependencies*
+  
+  ## Install rbenv
+  - git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+  - echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+  - echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+  - exec $SHELL
+  - git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+  - echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+  - exec $SHELL
+  - rbenv version
+  
+  ## Install Ruby
+  - rbenv install 2.6.1 *//intalling*
+  - ruby -v *//check version*
+  - rbenv global 2.6.1 *//set as global*
+  
+  ## Install bundler gem (dependency manager)
+  - gem install bundler
+  - rbenv rehash
+  
+  ## Config git
+  - git config --global color.ui true *//git command colorful*
+  - git config --global user.name "your name here"
+  - git config --global user.email "email@example.com"
+  
+  ## Generate SSH key and copyng repo
+  - ssh-keygen -t rsa -b 4096 -C "email@example.com"
+  - cat ~/.ssh/id_rsa.pub *//show ssh key then select with your mouse and copy it*
+  - ssh -T git@github.com *//connecting with github*
+  - Go to github site in your browser then go to SSH page and add your ssh key that you already copied
+  
+  ## Install Rails
+  - gem install rails -v 5.2.2
+  - rails -v
+  
+  ## Install PostgreSQL
+  - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
+  - wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+  - sudo apt-get update
+  - sudo apt-get install postgresql-common
+  - sudo apt-get install postgresql-9.5 libpq-dev
+  
+  ## Config Postgre user
+  - sudo -u postgres createuser set_here_user_name
+  
+  ## Install Node.js
+  - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
+  - source ~/.bashrc
+  - nvm install 4.4.7
+  
+  ## First Rails project
+  - mkdir rails
+  - cd rails
+  - rails new app
+  - cd app
+    
+  ## Running Rails project
+  - bundle exec rails db:migrate
+  - rails s
+  - localhost:3000 *//in browser*
+
 
 ## Common commands
 - rails new project_name *//create a new project in rails*
