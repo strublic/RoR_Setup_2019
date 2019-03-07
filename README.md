@@ -101,6 +101,10 @@ RSpec
   *//in your browser*
   - localhost:3000 
 
+  ### Create Github repository
+  - Go to github site > create new repository > set the name of you project/repository > click in Create
+  - Follow the instructions that github provide to setup in your local terminal
+  
 ## Extras
 ### Common commands
 - rails new project_name *//create a new project in rails*
