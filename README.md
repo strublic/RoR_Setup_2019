@@ -21,10 +21,10 @@ RSpec
 
 ## Setup a Linux environment (Ubuntu/Mint)
   ## Install git
-    *//update all packages*
+   *//update all packages*
   - sudo apt-get update
   
-    *//install Git and others dependencies*
+   *//install Git and others dependencies*
   - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev 
   
   ## Install rbenv
