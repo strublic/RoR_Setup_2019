@@ -20,14 +20,14 @@ RSpec
 # First of All
 
 ## Setup a Linux environment (Ubuntu/Mint)
-  ## Install git
+  ### Install git
    *//update all packages*
   - sudo apt-get update
   
    *//install Git and others dependencies*
   - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev 
   
-  ## Install rbenv
+  ### Install rbenv
   - git clone https://github.com/rbenv/rbenv.git ~/.rbenv
   - echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
   - echo 'eval "$(rbenv init -)"' >> ~/.bashrc
@@ -37,7 +37,7 @@ RSpec
   - exec $SHELL
   - rbenv version
   
-  ## Install Ruby
+  ### Install Ruby
   *//intalling ruby in rbenv*
   - rbenv install 2.6.1 
   
@@ -47,17 +47,17 @@ RSpec
   *//set as global*
   - rbenv global 2.6.1 
   
-  ## Install bundler gem (dependency manager)
+  ### Install bundler gem (dependency manager)
   - gem install bundler
   - rbenv rehash
   
-  ## Config git
+  ### Config git
   *//git command colorful*
   - git config --global color.ui true 
   - git config --global user.name "your name here"
   - git config --global user.email "email@example.com"
   
-  ## Generate SSH key and copyng repo
+  ### Generate SSH key and copyng repo
   - ssh-keygen -t rsa -b 4096 -C "email@example.com"
   
   *//show ssh key then select with your mouse and copy it*
@@ -67,40 +67,40 @@ RSpec
   - ssh -T git@github.com 
   - Go to github site in your browser then go to SSH page and add your ssh key that you already copied
   
-  ## Install Rails
+  ### Install Rails
   - gem install rails -v 5.2.2
   - rails -v
   
-  ## Install PostgreSQL
+  ### Install PostgreSQL
   - sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ xenial-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
   - wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
   - sudo apt-get update
   - sudo apt-get install postgresql-common
   - sudo apt-get install postgresql-9.5 libpq-dev
   
-  ## Config Postgre user
+  ### Config Postgre user
   - sudo -u postgres createuser set_here_user_name
   
-  ## Install Node.js
+  ### Install Node.js
   - curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
   - source ~/.bashrc
   - nvm install 4.4.7
   
-  ## First Rails project
+  ### First Rails project
   - mkdir rails
   - cd rails
   - rails new app
   - cd app
     
-  ## Running Rails project
+  ### Running Rails project
   - bundle exec rails db:migrate
   - rails s
   
   *//in your browser*
   - localhost:3000 
 
-# Extras
-## Common commands
+## Extras
+### Common commands
 - rails new project_name *//create a new project in rails*
 - rails new project_name -d mysql *//create a new project in rails with mysql*
 - rails new project_name -d postgresql *//create a new project in rails with postgres*
@@ -116,13 +116,13 @@ RSpec
 - rails active_storage:install *//after run `rails db:migrate` to use Active Storage in rails 5.2*
 - rake db:drop db:create db:seed *//can use all of them in this sequence*
 
-## Especials commands
+### Especials commands
 - bundle show **gem_name** *//check GEM version ex.: bundle show bootstrap*
 - Open project in Atom Text Editor (if in the current project folder)
   - atom /
   - atom .
 
-## Git commands
+### Git commands
 - git add . *//adds all modified and new (untracked) files in the current directory*
 - git commit -m "comment about this changes" *//it like save the files, every time you save it creates a unique ID*
 - git push origin <branch> *//how you transfer commits from your local repository to a remote repository*
