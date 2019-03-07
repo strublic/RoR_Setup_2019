@@ -21,9 +21,10 @@ RSpec
 
 ## Setup a Linux environment (Ubuntu/Mint)
   ## Install git
-  *//update all packages*
-  - sudo apt-get update 
-  *//install Git and others dependencies*
+    *//update all packages*
+  - sudo apt-get update
+  
+    *//install Git and others dependencies*
   - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev 
   
   ## Install rbenv
@@ -39,8 +40,10 @@ RSpec
   ## Install Ruby
   *//intalling ruby in rbenv*
   - rbenv install 2.6.1 
+  
   *//check version*
   - ruby -v 
+  
   *//set as global*
   - rbenv global 2.6.1 
   
@@ -56,8 +59,10 @@ RSpec
   
   ## Generate SSH key and copyng repo
   - ssh-keygen -t rsa -b 4096 -C "email@example.com"
+  
   *//show ssh key then select with your mouse and copy it*
   - cat ~/.ssh/id_rsa.pub 
+  
   *//connecting with github*
   - ssh -T git@github.com 
   - Go to github site in your browser then go to SSH page and add your ssh key that you already copied
@@ -90,6 +95,7 @@ RSpec
   ## Running Rails project
   - bundle exec rails db:migrate
   - rails s
+  
   *//in your browser*
   - localhost:3000 
 
