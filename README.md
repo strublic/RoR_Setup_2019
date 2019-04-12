@@ -1,5 +1,10 @@
 # RoR_Setup_2019
 
+## Atualizar com:
+###### RVM (Ruby Version Manager)
+###### PostgreSQL install step (https://r00t4bl3.com/post/how-to-install-postgresql-11-on-linux-mint-19-tara)
+###### RDBMS PostgreSQL DBeaver (https://dbeaver.io/download/)
+
 ## My Current Environment
 ###### Ruby on Rails
 Ruby v2.6.1, Rails v5.2.2
