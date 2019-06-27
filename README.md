@@ -17,14 +17,26 @@ Bootstrap, HTML, APIs, Jquery, js,
 ###### IDE:
 Sublime, ATOM, VSCode
 ###### Githost:
-Github, GitLab, Bitbucket
+Git, Github, GitLab, Bitbucket
 ###### Test:
 RSpec
+###### Terminal:
+Terminator, zsh
 
 
 # First of All
 
 ## Setup a Linux environment (Ubuntu/Mint)
+  ### Upgrade your terminal
+   *//update all packages*
+  - sudo apt-get update
+  - sudo add-apt-repository ppa:gnome-terminator/nightly-gtk3
+  - sudo apt-get update
+  - sudo apt-get install terminator
+  => link: https://www.edivaldobrito.com.br/emulador-de-terminal-terminator-no-ubuntu/
+  
+   *//install Git and others dependencies*
+  - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
   ### Install git
    *//update all packages*
   - sudo apt-get update
