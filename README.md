@@ -11,7 +11,7 @@ Ruby v2.6.1, Rails v5.2.2
 ###### Ruby GEMs to install
 Devise, bootstrap, jquery-rails, jquery-ui-rails, pry-byebug, cocoon, client_side_validations, rails-i18n, cancancan
 ###### Database
-Mysql, MongoDB
+Mysql, MongoDB, PostgreSQL
 ###### Other Techs
 Bootstrap, HTML, APIs, Jquery, js,
 ###### IDE:
