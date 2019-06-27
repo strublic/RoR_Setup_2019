@@ -35,8 +35,11 @@ Terminator, zsh
   - sudo apt-get install terminator
   => link: https://www.edivaldobrito.com.br/emulador-de-terminal-terminator-no-ubuntu/
   
-   *//install Git and others dependencies*
-  - sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev libxml2-dev libxslt1-dev libcurl4-openssl-dev software-properties-common libffi-dev
+  ### Install zsh on the terminal
+  - sudo apt-get install zsh curl git
+  - sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  => link: hhttp://www.boekhoff.info/how-to-install-zsh-and-oh-my-zsh/
+  
   ### Install git
    *//update all packages*
   - sudo apt-get update
