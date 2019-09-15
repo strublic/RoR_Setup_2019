@@ -170,15 +170,15 @@ Terminator, zsh
  - rails g devise user
  - rake db:migrate
  
- * //Adicione a validação no arquivo app/controllers/application_controller.rb *
+ *//Adicione a validação no arquivo app/controllers/application_controller.rb*
  - before_action :authenticate_user!
  - <% if user_signed_in? %>
  
- * //Actions *
+ *//Actions*
  - new_user_registration_path
  - new_user_session_path
  - edit_user_registration_path
  - destroy_user_session_path, method: :delete
   
- * //to customize login layout *
+ *//to customize login layout*
  - rails generate devise:views
