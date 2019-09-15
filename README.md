@@ -161,3 +161,24 @@ Terminator, zsh
   ## Commons errors to me
   - Error loading the 'sqlite3' Active Record adapter... (my current ruby version was 2.5.3)
   - Objects folder in .git is extremely large for my small project
+  
+ ### Devise
+ - gem 'devise'
+ - bundle install
+ - rails g scaffold user admin:boolean name:string
+ - rails g devise:install
+ - rails g devise user
+ - rake db:migrate
+ 
+ /* //Adicione a validação no arquivo app/controllers/application_controller.rb */
+ - before_action :authenticate_user!
+ - <% if user_signed_in? %>
+ 
+ /* //Actions */
+  - new_user_registration_path
+  - new_user_session_path
+  - edit_user_registration_path
+  - destroy_user_session_path, method: :delete
+  
+ /* //to customize login layout */
+ - rails generate devise:views
