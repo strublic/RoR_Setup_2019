@@ -170,7 +170,7 @@ Terminator, zsh
  - rails g devise user
  - rake db:migrate
  
- *//Adicione a validação no arquivo app/controllers/application_controller.rb*
+ *//add validation in app/controllers/application_controller.rb*
  - before_action :authenticate_user!
  - <% if user_signed_in? %>
  
