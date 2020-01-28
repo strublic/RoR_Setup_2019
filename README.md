@@ -182,3 +182,8 @@ Terminator, zsh
   
  *//to customize login layout*
  - rails generate devise:views
+ 
+ ### GEMs
+ *wkhtmltopdf*
+ helpers: https://stackoverflow.com/a/55753447/8819251
+ 
