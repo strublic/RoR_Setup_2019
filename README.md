@@ -5,23 +5,23 @@
 ###### PostgreSQL install step (https://r00t4bl3.com/post/how-to-install-postgresql-11-on-linux-mint-19-tara)
 ###### RDBMS PostgreSQL DBeaver (https://dbeaver.io/download/)
 
-## My Current Environment
+## Common Environment
 ###### Ruby on Rails
 Ruby v2.6.1, Rails v5.2.2
 ###### Ruby GEMs to install
 Devise, bootstrap, jquery-rails, jquery-ui-rails, pry-byebug, cocoon, client_side_validations, rails-i18n, cancancan
 ###### Database
-Mysql, MongoDB, PostgreSQL
+PostgreSQL or [Mysql, MongoDB]
 ###### Other Techs
 Bootstrap, HTML, APIs, Jquery, js,
 ###### IDE:
-Sublime, ATOM, VSCode
+VSCode or [Sublime, ATOM]
 ###### Githost:
-Git, Github, GitLab, Bitbucket
+Github or [GitLab, Bitbucket]
 ###### Test:
 RSpec
 ###### Terminal:
-Terminator, zsh
+Terminator + zsh
 
 
 # First of All
@@ -143,10 +143,9 @@ Terminator, zsh
 - rake db:drop db:create db:seed *//can use all of them in this sequence*
 
 ### Especials commands
-- bundle show **gem_name** *//check GEM version ex.: bundle show bootstrap*
-- Open project in Atom Text Editor (if in the current project folder)
-  - atom /
-  - atom .
+- `bundle show **gem_name**` *//check GEM version ex.: bundle show bootstrap*
+- Open project in VS Code text editor (in root folder of your project)
+  - `code .`
 
 ### Git commands
 - git add . *//adds all modified and new (untracked) files in the current directory*
@@ -182,8 +181,27 @@ Terminator, zsh
   
  *//to customize login layout*
  - rails generate devise:views
+
+###
  
  ### GEMs
- *wkhtmltopdf*
- helpers: https://stackoverflow.com/a/55753447/8819251
+ *wkhtmltopdf* => Convert HTL to PDF
+ https://stackoverflow.com/a/55753447/8819251
  
+ *Rubycritic* => Report of Ruby code quality
+ https://github.com/whitesmith/rubycritic
+ 
+*RuboCop* => Analize and code formater as Ruby Style Guide
+https://github.com/rubocop/rubocop
+
+*SimpleCov* => Coverage test report
+https://github.com/simplecov-ruby/simplecov
+
+*Bundler-audit* => Segure application report
+https://github.com/rubysec/bundler-audit
+
+*Bullet* => Notify optimize performance reducing queries
+https://github.com/flyerhzm/bullet
+
+*Brakeman* => Search for secure vulnerabilty
+https://github.com/presidentbeef/brakeman
